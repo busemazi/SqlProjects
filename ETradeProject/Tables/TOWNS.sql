@@ -1,0 +1,10 @@
+CREATE TABLE [dbo].[TOWNS] (
+    [ID]     INT          NOT NULL,
+    [CITYID] SMALLINT     NULL,
+    [TOWN]   VARCHAR (50) NULL,
+    CONSTRAINT [PK_TOWNS] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
+
+GO
+

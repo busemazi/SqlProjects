@@ -1,0 +1,13 @@
+CREATE TABLE [dbo].[ORDERDETAILS] (
+    [ID]        INT             IDENTITY (1, 1) NOT NULL,
+    [ORDERID]   INT             NULL,
+    [ITEMID]    INT             NULL,
+    [AMOUNT]    INT             NULL,
+    [UNITPRICE] DECIMAL (18, 4) NULL,
+    [LINETOTAL] DECIMAL (18, 4) NULL,
+    CONSTRAINT [PK_ORDERDETAILS] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
+
+GO
+

@@ -1,0 +1,21 @@
+CREATE TABLE [dbo].[ADDRESS] (
+    [ID]          INT           IDENTITY (1, 1) NOT NULL,
+    [USERID]      INT           NULL,
+    [COUNTRYID]   TINYINT       NULL,
+    [CITYID]      SMALLINT      NULL,
+    [TOWNID]      INT           NULL,
+    [DISTRICTID]  INT           NULL,
+    [POSTALCODE]  VARCHAR (10)  NULL,
+    [ADDRESSTEXT] VARCHAR (500) NULL,
+    CONSTRAINT [PK_ADDRESS] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
+
+GO
+
+CREATE NONCLUSTERED INDEX [IX1]
+    ON [dbo].[ADDRESS]([USERID] ASC);
+
+
+GO
+
